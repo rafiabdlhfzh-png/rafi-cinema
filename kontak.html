@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil & Kontak | Rafi Cinema</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0f0d14">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html"><img src="logo.svg" alt="" width="34" height="34"><span>Rafi<b>Cinema</b></span></a>
+        <nav class="links" aria-label="Menu utama">
+            <a href="index.html">Home</a>
+            <a href="film.html">Film</a>
+            <a href="rating.html">Rating</a>
+            <a href="member.html">Membership</a>
+            <a href="kontak.html" class="active">Profil</a>
+        </nav>
+        <div class="display-settings">
+            <button class="mode-toggle" type="button" aria-expanded="false">Tampilan</button>
+            <div class="settings-panel">
+                <label>Tema warna
+                    <select id="theme-mode" aria-label="Pilih mode gelap atau terang">
+                        <option value="auto">Otomatis (ikut perangkat)</option>
+                        <option value="light">Terang</option>
+                        <option value="dark">Gelap</option>
+                    </select>
+                </label>
+                <label>Ukuran layar
+                    <select id="display-mode" aria-label="Pilih mode tampilan">
+                        <option value="auto">Otomatis</option>
+                        <option value="android">Android</option>
+                        <option value="windows">Windows</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="wrap">
+            <header class="page-intro">
+                <h1>Profil dan kontak</h1>
+                <p>Ada pertanyaan soal Rafi Cinema atau mau ngobrol soal proyek web? Hubungi saya lewat salah satu cara di bawah.</p>
+            </header>
+        </section>
+
+        <section class="wrap contact-block" id="profil">
+            <h2>Tentang pembuat situs</h2>
+            <article class="profile-card">
+                <img src="profil.png" alt="Foto profil Rafi Abdul Hafizh" class="profile-img">
+                <div class="profile-copy">
+                    <h3>Rafi Abdul Hafizh</h3>
+                    <p>Saya mahasiswa Teknik Informatika yang membuat Rafi Cinema. Minat saya ada di pengembangan web, Generative AI, dan pengolahan data dengan Python.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="wrap contact-block">
+            <h2>Hubungi saya</h2>
+            <div class="contact-layout">
+                <div class="contact-details">
+                    <a class="contact-method" href="mailto:rafiabdlhfzh@gmail.com">
+                        <span>Email</span>
+                        <strong>rafiabdlhfzh@gmail.com</strong>
+                    </a>
+                    <a class="contact-method" href="tel:089684519886">
+                        <span>Telepon</span>
+                        <strong>089684519886</strong>
+                    </a>
+                    <a class="contact-method" href="https://linkedin.com/in/rafiabdulhafizh" target="_blank" rel="noopener noreferrer">
+                        <span>LinkedIn</span>
+                        <strong>linkedin.com/in/rafiabdulhafizh</strong>
+                    </a>
+                </div>
+                <form class="contact-form" action="mailto:rafiabdlhfzh@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-row">
+                        <label for="nama">Nama
+                            <input id="nama" name="nama" type="text" autocomplete="name" required>
+                        </label>
+                        <label for="email">Email
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                        </label>
+                    </div>
+                    <label for="pesan">Pesan
+                        <textarea id="pesan" name="pesan" required></textarea>
+                    </label>
+                    <button class="button primary" type="submit">Kirim lewat email</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span class="footer-name"><img src="logo.svg" alt="" width="26" height="26"><span>Rafi<b>Cinema</b></span></span>
+        <p>&copy; 2026 Rafi Abdul Hafizh</p>
+    </footer>
+    <script src="display-mode.js"></script>
+</body>
+</html>
