@@ -298,3 +298,9 @@ footer{display:block;margin-top:88px;padding:52px max(16px,calc((100% - var(--wi
 .mode-mobile .footer-grid{grid-template-columns:1fr;gap:30px}
 .mode-mobile .join{padding:26px 22px}
 .mode-mobile .top-card{padding:18px}
+
+/* Mobile: sembunyikan kolom footer "Jelajahi" dan "Hubungi" */
+@media(max-width:760px){
+body:not(.mode-desktop) .footer-col{display:none}
+}
+.mode-mobile .footer-col{display:none}
