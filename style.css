@@ -304,3 +304,4 @@ footer{display:block;margin-top:88px;padding:52px max(16px,calc((100% - var(--wi
 body:not(.mode-desktop) footer{display:none!important}
 }
 .mode-mobile footer{display:none!important}
+                
