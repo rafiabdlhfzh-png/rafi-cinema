@@ -299,9 +299,20 @@ footer{display:block;margin-top:88px;padding:52px max(16px,calc((100% - var(--wi
 .mode-mobile .join{padding:26px 22px}
 .mode-mobile .top-card{padding:18px}
 
-/* Mobile: sembunyikan seluruh footer (logo, deskripsi, sosmed, copyright) */
+/* Mobile: footer hanya berisi logo */
 @media(max-width:760px),(hover:none) and (pointer:coarse){
-body:not(.mode-desktop) footer{display:none!important}
+body:not(.mode-desktop) footer{margin-top:56px;padding:28px 16px 8px}
+body:not(.mode-desktop) .footer-grid{display:flex;justify-content:center;padding-bottom:20px}
+body:not(.mode-desktop) .footer-brand{display:flex;justify-content:center}
+body:not(.mode-desktop) .footer-brand p,
+body:not(.mode-desktop) .footer-social,
+body:not(.mode-desktop) .footer-col,
+body:not(.mode-desktop) .footer-bottom{display:none!important}
 }
-.mode-mobile footer{display:none!important}
-                
+.mode-mobile footer{margin-top:56px;padding:28px 16px 8px}
+.mode-mobile .footer-grid{display:flex;justify-content:center;padding-bottom:20px}
+.mode-mobile .footer-brand{display:flex;justify-content:center}
+.mode-mobile .footer-brand p,
+.mode-mobile .footer-social,
+.mode-mobile .footer-col,
+.mode-mobile .footer-bottom{display:none!important}
