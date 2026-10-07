@@ -1,0 +1,8 @@
+{
+  "name": "rafi-cinema",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Rafi Cinema - situs film dengan akun yang sinkron antar perangkat",
+  "scripts": { "start": "node server/index.js" },
+  "engines": { "node": ">=18" }
+}
