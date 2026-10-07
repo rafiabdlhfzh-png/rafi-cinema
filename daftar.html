@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Membership | Rafi Cinema</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="logo.png">
+    <meta name="theme-color" content="#0f0d14">
+    <script src="guard.js"></script>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><defs><symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol><symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 3v18M17 3v18M3 8h4M3 12h4M3 16h4M17 8h4M17 12h4M17 16h4"/></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol><symbol id="i-crown" viewBox="0 0 24 24"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></symbol><symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol><symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></symbol><symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol><symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol><symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M5 9h3v10H5zM6.5 4.5a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zM10 9h2.9v1.4c.5-.9 1.6-1.6 3.1-1.6 3 0 3.5 2 3.5 4.5V19h-3v-5c0-1.2 0-2.6-1.6-2.6S13 12.7 13 14v5h-3z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol><symbol id="i-login" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></symbol></defs></svg>
+    <header class="topbar">
+        <a class="brand" href="index.html"><img src="logo.svg" alt="" width="42" height="42"><span class="wordmark"><span class="wm">Rafi<b>Cinema</b></span><small>Movie picks</small></span></a>
+        <nav class="links" aria-label="Menu utama">
+            <a href="index.html"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-home"/></svg><span>Home</span></a>
+            <a href="film.html"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-film"/></svg><span>Film</span></a>
+            <a href="rating.html"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><span>Rating</span></a>
+            <a href="member.html" class="active" aria-current="page"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-crown"/></svg><span>Membership</span></a>
+            <a href="kontak.html"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-user"/></svg><span>Profil</span></a>
+            <a href="login.html"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-login"/></svg><span>Login</span></a>
+        </nav>
+        <div class="top-actions"><a class="icon-btn" href="cari.html" aria-label="Cari film" title="Cari film"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-search"/></svg></a><a class="icon-btn" href="daftar-saya.html" aria-label="Daftar Saya" title="Daftar Saya"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-heart"/></svg><span class="count" hidden>0</span></a></div>
+        <div class="display-settings">
+            <button class="mode-toggle" type="button" aria-expanded="false" aria-label="Display settings"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-sliders"/></svg><span>Display</span></button>
+            <div class="settings-panel">
+                <label><span class="lbl"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-sun"/></svg>Theme</span>
+                    <select id="theme-mode" aria-label="Choose light or dark theme">
+                        <option value="auto">Auto (follow device)</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </label>
+                <label><span class="lbl"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-tv"/></svg>View mode</span>
+                    <select id="display-mode" aria-label="Choose view mode">
+                        <option value="auto">Auto</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="desktop">Desktop</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </header>
+
+        <main>
+        <section class="wrap">
+            <header class="page-intro">
+
+                <h1>Daftar membership</h1>
+                <p>Tiga langkah singkat. Paket dipasang ke akun yang sedang kamu pakai, jadi tidak perlu membuat akun lagi.</p>
+            </header>
+
+            <div id="wz-top" class="wz-head">
+                <p class="wz-count">Langkah <b id="wz-n">1</b> dari 3</p>
+                <ol class="wz-steps" aria-label="Alur registrasi">
+                    <li class="on"><b>1</b><span>Paket</span></li>
+                    <li><b>2</b><span>Data &amp; bayar</span></li>
+                    <li><b>3</b><span>Konfirmasi</span></li>
+                </ol>
+                <div class="wz-progress"><i id="wz-bar"></i></div>
+            </div>
+
+            <div id="reg-wrap" class="wz-layout">
+                <form id="reg-form" class="contact-form" novalidate>
+                    <section class="wz-panel" data-step="1">
+                        <h2>Pilih paket yang cocok untukmu</h2>
+                        <p class="wz-sub">Harga ditagih per bulan. Semua paket bisa kamu tinjau lagi di langkah terakhir.</p>
+                        <div class="wz-plans">
+                            <label class="wz-opt"><input type="radio" name="paket" value="Basic" data-price="4.99"><span class="wz-plan"><b class="wz-name">Basic</b><span class="wz-price">$4.99<small> / bulan</small></span><span class="wz-quality">720p HD</span><ul><li>Iklan terbatas</li><li>Untuk 1 layar</li></ul></span></label>
+                            <label class="wz-opt"><input type="radio" name="paket" value="Standar" data-price="9.99"><span class="wz-plan"><span class="wz-tag">Paling diminati</span><b class="wz-name">Standar</b><span class="wz-price">$9.99<small> / bulan</small></span><span class="wz-quality">1080p Full HD</span><ul><li>Bebas iklan</li><li>Hingga 2 layar bersamaan</li></ul></span></label>
+                            <label class="wz-opt"><input type="radio" name="paket" value="Premium" data-price="14.99"><span class="wz-plan"><b class="wz-name">Premium</b><span class="wz-price">$14.99<small> / bulan</small></span><span class="wz-quality">Ultra HD 4K + HDR</span><ul><li>Unduh sepuasnya</li><li>Hingga 4 layar keluarga</li></ul></span></label>
+                        </div>
+                        <span class="wz-err" data-for="paket" role="alert"></span>
+                    </section>
+
+                    <section class="wz-panel" data-step="2" hidden>
+                        <h2>Data &amp; pembayaran</h2>
+                        <p class="wz-sub">Cukup data singkat. Paket akan dipasang ke akun yang sedang kamu pakai.</p>
+                        <div class="wz-account"><span class="wz-avatar" id="acc-ini">?</span><div><small>Masuk sebagai</small><b id="acc-email"></b></div></div>
+                        <div class="form-row">
+                            <label for="nama">Nama lengkap
+                                <input type="text" id="nama" name="nama" autocomplete="name">
+                                <span class="wz-err" data-for="nama" role="alert"></span>
+                            </label>
+                            <label for="hp">No. HP
+                                <input type="tel" id="hp" name="hp" autocomplete="tel" inputmode="tel" placeholder="08xxxxxxxxxx">
+                                <span class="wz-err" data-for="hp" role="alert"></span>
+                            </label>
+                        </div>
+                        <p class="wz-pt">Metode pembayaran</p>
+                        <p class="wz-hint" style="margin:-6px 0 12px">Belum ada pembayaran yang dipotong. Ini hanya data pilihan untuk akunmu.</p>
+                        <div class="pay-choice">
+                            <label class="pay-option"><input type="radio" name="bayar" value="Kartu"><span class="po-card"><b>Kartu debit / kredit</b><span class="logos"><svg class="logo" viewBox="0 0 64 40" role="img" aria-label="Visa"><rect width="64" height="40" rx="6" fill="#fff"/><text x="32" y="28" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="900" font-style="italic" fill="#1a1f71">VISA</text></svg> <svg class="logo" viewBox="0 0 64 40" role="img" aria-label="Mastercard"><rect width="64" height="40" rx="6" fill="#fff"/><circle cx="26" cy="20" r="11" fill="#eb001b"/><circle cx="38" cy="20" r="11" fill="#f79e1b"/><path d="M32 11.2a11 11 0 0 1 0 17.6 11 11 0 0 1 0-17.6z" fill="#ff5f00"/></svg></span></span></label>
+                            <label class="pay-option"><input type="radio" name="bayar" value="E-wallet"><span class="po-card"><b>Dompet digital</b><span class="logos"><svg class="logo" viewBox="0 0 64 40" role="img" aria-label="GoPay"><rect width="64" height="40" rx="6" fill="#fff"/><circle cx="14" cy="20" r="6" fill="#00aed6"/><text x="38" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#00aed6">gopay</text></svg> <svg class="logo" viewBox="0 0 64 40" role="img" aria-label="OVO"><rect width="64" height="40" rx="6" fill="#4c2a86"/><text x="32" y="27" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="900" fill="#fff">OVO</text></svg> <svg class="logo" viewBox="0 0 64 40" role="img" aria-label="DANA"><rect width="64" height="40" rx="6" fill="#118eea"/><text x="32" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="1" fill="#fff">DANA</text></svg></span></span></label>
+                        </div>
+                        <span class="wz-err" data-for="bayar" role="alert"></span>
+                        <div id="pay-card" class="pay-panel" hidden>
+                            <label for="kartu">Nomor kartu
+                                <input type="text" id="kartu" name="kartu" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456" maxlength="23">
+                                <span class="wz-err" data-for="kartu" role="alert"></span>
+                            </label>
+                            <p class="wz-hint">Nomor kartu hanya dipakai di formulir ini. Yang tersimpan hanya 4 digit terakhir.</p>
+                        </div>
+                        <div id="pay-wallet" class="pay-panel" hidden>
+                            <p class="pay-label">Pilih dompet digital</p>
+                            <div class="wallet-choice">
+                                <label class="pay-option"><input type="radio" name="ewallet" value="GoPay"><span class="po-card"><svg class="logo" viewBox="0 0 64 40" role="img" aria-label="GoPay"><rect width="64" height="40" rx="6" fill="#fff"/><circle cx="14" cy="20" r="6" fill="#00aed6"/><text x="38" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#00aed6">gopay</text></svg><small>GoPay</small></span></label>
+                                <label class="pay-option"><input type="radio" name="ewallet" value="OVO"><span class="po-card"><svg class="logo" viewBox="0 0 64 40" role="img" aria-label="OVO"><rect width="64" height="40" rx="6" fill="#4c2a86"/><text x="32" y="27" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="900" fill="#fff">OVO</text></svg><small>OVO</small></span></label>
+                                <label class="pay-option"><input type="radio" name="ewallet" value="DANA"><span class="po-card"><svg class="logo" viewBox="0 0 64 40" role="img" aria-label="DANA"><rect width="64" height="40" rx="6" fill="#118eea"/><text x="32" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="1" fill="#fff">DANA</text></svg><small>DANA</small></span></label>
+                            </div>
+                            <span class="wz-err" data-for="ewallet" role="alert"></span>
+                        </div>
+                    </section>
+
+                    <section class="wz-panel" data-step="3" hidden>
+                        <h2>Tinjau lalu konfirmasi</h2>
+                        <p class="wz-sub">Periksa sekali lagi. Ketuk "Ubah" kalau ada yang perlu diperbaiki.</p>
+                        <ul class="wz-review" id="wz-review"></ul>
+                        <label class="wz-agree"><input type="checkbox" name="agree"><span>Saya setuju dengan syarat langganan Rafi Cinema dan paham bahwa ini pendaftaran demo di browser ini.</span></label>
+                        <span class="wz-err" data-for="agree" role="alert"></span>
+                    </section>
+
+                    <div class="wz-nav">
+                        <button type="button" class="button outline" id="wz-back">Kembali</button>
+                        <button type="button" class="button primary" id="wz-next">Lanjut</button>
+                    </div>
+                </form>
+
+                <aside class="wz-summary" aria-label="Ringkasan pesanan">
+                    <h2>Ringkasan</h2>
+                    <dl>
+                        <div><dt>Paket</dt><dd id="sum-plan">-</dd></div>
+                        <div><dt>Pembayaran</dt><dd id="sum-pay">-</dd></div>
+                        <div class="total"><dt>Total per bulan</dt><dd id="sum-price">-</dd></div>
+                    </dl>
+                    <p class="wz-hint">Setelah konfirmasi, paket langsung aktif di akunmu.</p>
+                </aside>
+            </div>
+
+            <div id="reg-done" class="wz-done" hidden>
+                <div class="wz-check" aria-hidden="true"></div>
+                <h2>Membership aktif, <span id="done-name"></span>!</h2>
+                <p>Paket <strong id="done-plan"></strong> sudah terpasang di akun <strong id="done-email"></strong>.</p>
+                <dl class="wz-receipt" id="wz-receipt"></dl>
+                <h3>Langkah berikutnya</h3>
+                <ol class="wz-next">
+                    <li><b>1</b><span>Buka menu Profil untuk melihat paket dan melengkapi profilmu.</span></li>
+                    <li><b>2</b><span>Jelajahi film dan mulai menonton.</span></li>
+                </ol>
+                <div class="actions"><a class="button primary" href="kontak.html">Lihat profil</a><a class="button outline" href="film.html">Jelajahi film</a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="footer-name"><img src="logo.svg" alt="" width="34" height="34"><span class="wordmark"><span class="wm">Rafi<b>Cinema</b></span></span></span>
+                <p>Film pilihan Rafi, lengkap dengan trailer dan skor IMDb.</p>
+                <div class="footer-social"><a href="mailto:rafiabdlhfzh@gmail.com" aria-label="Email"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></a><a href="https://linkedin.com/in/rafiabdulhafizh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico ico-solid" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a></div>
+            </div>
+            <nav class="footer-col" aria-label="Footer">
+                <h4>Jelajahi</h4>
+                <a href="index.html">Home</a><a href="film.html">Film</a><a href="rating.html">Rating</a><a href="member.html">Membership</a><a href="daftar-saya.html">Daftar Saya</a><a href="cari.html">Cari film</a><a href="kontak.html">Profil</a>
+            </nav>
+            <div class="footer-col">
+                <h4>Hubungi</h4>
+                <a href="mailto:rafiabdlhfzh@gmail.com">rafiabdlhfzh@gmail.com</a>
+                <a href="https://linkedin.com/in/rafiabdulhafizh" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="kontak.html#kontak">Formulir kontak</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Rafi Abdul Hafizh</p></div>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="movies.js"></script>
+    <script>
+(function(){
+var U=RafiAuth.current();if(!U){location.replace('login.html');return}
+var $=function(s){return document.querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+var f=$('#reg-form'),E=f.elements,TOTAL=3,cur=1;
+var panels=$$('.wz-panel'),steps=$$('.wz-steps li'),bar=$('#wz-bar'),back=$('#wz-back'),next=$('#wz-next');
+var LABEL=['Lanjut: data & pembayaran','Lanjut: tinjau','Konfirmasi & aktifkan'];
+E.nama.value=U.nama||'';$('#acc-email').textContent=U.email;
+$('#acc-ini').textContent=(U.nama||U.email).trim().split(/\s+/).slice(0,2).map(function(w){return w[0]}).join('').toUpperCase();
+function chk(n){return f.querySelector('input[name="'+n+'"]:checked')}
+function digits(v){return v.replace(/\D/g,'')}
+function err(n,m){var el=f.querySelector('.wz-err[data-for="'+n+'"]');if(el)el.textContent=m||'';var i=E[n];if(i&&i.nodeType===1)i.setAttribute('aria-invalid',m?'true':'false')}
+function payLabel(){var b=chk('bayar');if(!b)return '-';if(b.value==='Kartu'){var d=digits(E.kartu.value);return d.length>=4?'Kartu ****'+d.slice(-4):'Kartu debit/kredit'}var w=chk('ewallet');return w?w.value:'Dompet digital'}
+function upd(){var p=chk('paket'),b=chk('bayar');
+$('#sum-plan').textContent=p?p.value:'-';$('#sum-price').textContent=p?'$'+p.dataset.price:'-';$('#sum-pay').textContent=payLabel();
+$('#pay-card').hidden=!(b&&b.value==='Kartu');$('#pay-wallet').hidden=!(b&&b.value==='E-wallet')}
+function row(label,val,go){var li=document.createElement('li'),d=document.createElement('div'),s=document.createElement('small'),b=document.createElement('b');
+s.textContent=label;b.textContent=val;d.appendChild(s);d.appendChild(b);li.appendChild(d);
+if(go){var a=document.createElement('button');a.type='button';a.className='wz-edit';a.textContent='Ubah';a.dataset.go=go;li.appendChild(a)}return li}
+function review(){var p=chk('paket'),ul=$('#wz-review');ul.textContent='';
+ul.appendChild(row('Akun',U.email));ul.appendChild(row('Paket',p.value+' \u00b7 $'+p.dataset.price+' / bulan',1));
+ul.appendChild(row('Nama',E.nama.value.trim(),2));ul.appendChild(row('No. HP',E.hp.value.trim(),2));ul.appendChild(row('Pembayaran',payLabel(),2))}
+function show(n){cur=n;
+panels.forEach(function(p){p.hidden=+p.dataset.step!==n});
+steps.forEach(function(li,i){li.classList.toggle('on',i+1===n);li.classList.toggle('done',i+1<n);li.firstChild.textContent=i+1<n?'\u2713':i+1});
+bar.style.width=(n/TOTAL*100)+'%';$('#wz-n').textContent=n;
+back.style.visibility=n===1?'hidden':'visible';next.textContent=LABEL[n-1];
+if(n===3)review();
+$('#wz-top').scrollIntoView({behavior:'smooth',block:'start'})}
+function valid(n){var ok=true,first=null;function bad(k,m){err(k,m);ok=false;if(!first)first=E[k]}
+if(n===1){if(!chk('paket')){err('paket','Pilih salah satu paket untuk melanjutkan.');ok=false}else err('paket','')}
+if(n===2){var nama=E.nama.value.trim(),hp=E.hp.value.trim();
+if(nama.length<3)bad('nama','Nama lengkap wajib diisi (minimal 3 huruf).');
+if(!/^\+?[0-9\s-]{9,15}$/.test(hp))bad('hp','Nomor HP 9\u201315 digit.');
+var b=chk('bayar');if(!b)bad('bayar','Pilih metode pembayaran.');
+else if(b.value==='Kartu'){var d=digits(E.kartu.value);if(d.length<13||d.length>19)bad('kartu','Nomor kartu harus 13-19 digit.')}
+else if(!chk('ewallet'))bad('ewallet','Pilih dompet digital.')}
+if(n===3){if(!E.agree.checked){err('agree','Centang persetujuan untuk melanjutkan.');ok=false}else err('agree','')}
+if(first&&first.focus)first.focus();return ok}
+function finish(){var p=chk('paket'),label=payLabel(),nama=E.nama.value.trim(),hp=E.hp.value.trim();
+var r=RafiAuth.subscribe({nama:nama,hp:hp,plan:p.value,price:p.dataset.price,bayar:label});
+if(!r.ok){if(r.error==='nologin'){location.replace('login.html');return}alert('Data tidak bisa disimpan di browser ini.');return}
+$('#done-name').textContent=nama.split(' ')[0];$('#done-plan').textContent=p.value;$('#done-email').textContent=U.email;
+var rc=$('#wz-receipt');rc.textContent='';
+[['Akun',U.email],['Nama',nama],['No. HP',hp],['Paket',p.value],['Harga','$'+p.dataset.price+' / bulan'],['Pembayaran',label],['Tanggal',new Date().toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'})]].forEach(function(x){var d=document.createElement('div'),t=document.createElement('dt'),v=document.createElement('dd');t.textContent=x[0];v.textContent=x[1];d.appendChild(t);d.appendChild(v);rc.appendChild(d)});
+$('#reg-wrap').hidden=true;$('#wz-top').hidden=true;$('#reg-done').hidden=false;window.scrollTo({top:0,behavior:'smooth'})}
+next.addEventListener('click',function(){if(!valid(cur))return;cur===TOTAL?finish():show(cur+1)});
+back.addEventListener('click',function(){if(cur>1)show(cur-1)});
+steps.forEach(function(li,i){li.addEventListener('click',function(){if(i+1<cur)show(i+1)})});
+$('#wz-review').addEventListener('click',function(e){var g=e.target.dataset&&e.target.dataset.go;if(g)show(+g)});
+f.addEventListener('submit',function(e){e.preventDefault();next.click()});
+f.addEventListener('change',function(e){if(e.target.name){err(e.target.name,'');if(e.target.name==='bayar'){err('kartu','');err('ewallet','')}}upd()});
+f.addEventListener('input',function(e){var n=e.target.name;if(n)err(n,'');
+if(n==='kartu'){var d=digits(E.kartu.value).slice(0,19);E.kartu.value=d.replace(/(.{4})/g,'$1 ').trim()}
+upd()});
+var q=new URLSearchParams(location.search).get('plan'),map={basic:'Basic',standar:'Standar',premium:'Premium'};
+if(map[q]){var r=f.querySelector('input[name=paket][value="'+map[q]+'"]');if(r)r.checked=true}
+upd();show(map[q]?2:1);window.scrollTo(0,0);
+})();
+</script>
+    <script src="display-mode.js"></script>
+</body>
+</html>
